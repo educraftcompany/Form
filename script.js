@@ -32,7 +32,7 @@ $(document).ready(function() {
 
 // WhatsApp button functionality
 document.getElementById('whatsappOrderBtn').addEventListener('click', function() {
-    var phone = '+201095504278';
+    var phone = '+201032478918';
     var message = encodeURIComponent("Your custom message here");
     var whatsappUrl = `https://wa.me/${phone}?text=${message}`;
 
