@@ -9,14 +9,23 @@ const getProductImageUrl = () => {
 
     // Set the selected product image URL based on the selected option
     switch (selectedProduct) {
+        case "c++":
+            selectedProductImageUrl = "Basic Programming with c++";
+            break;
         case "python":
-            selectedProductImageUrl = "Python";
+            selectedProductImageUrl = "Basic of Python";
+            break;
+        case "flutter":
+        selectedProductImageUrl = "Flutter";
             break;
         case "ui-ux":
             selectedProductImageUrl = "UI UX";
             break;
         case "odoo-developer":
             selectedProductImageUrl = "Odoo Developer";
+            break;
+        case "odoo-functionl":
+            selectedProductImageUrl = "Odoo Functional";
             break;
         default:
             selectedProductImageUrl = ""; // Default to empty if no match
