@@ -5,12 +5,13 @@ body {
 }
 
 .navbar {
-    padding: 15px; /* Adjust padding as needed */
+    padding: 1px; /* Adjust padding as needed */
     border-radius: 5px; /* Optional: Adds rounded corners to the navbar */
 }
 
 .navbar-brand img {
-    max-height: 40px; /* Adjust maximum height of the logo */
+    max-height: 100px; /* Adjust maximum height of the logo */
+    max-width: 100px;
 }
 
 .navbar-nav {
@@ -39,7 +40,7 @@ a:link, a:visited, a:hover, a:active {
 
 .product-section {
     padding: 20px;
-    background-color: #f5f5f5; /* Adjust the background color as needed */
+    background-color: #FFF; /* Adjust the background color as needed */
     border-radius: 8px;
     margin-top: 20px; /* Spacing from the top of the page or the preceding element */
 }

@@ -13,13 +13,16 @@ const getProductImageUrl = () => {
             selectedProductImageUrl = "Basic Programming with c++";
             break;
         case "python":
-            selectedProductImageUrl = "Basic of Python";
+            selectedProductImageUrl = "Basic Programming with Python";
             break;
         case "flutter":
-        selectedProductImageUrl = "Flutter";
+        selectedProductImageUrl = "Flutter Developer";
             break;
+        case "wordpress":
+            selectedProductImageUrl = "Wordpress Developer";
+                break;
         case "ui-ux":
-            selectedProductImageUrl = "UI UX";
+            selectedProductImageUrl = "UI UX Design";
             break;
         case "odoo-developer":
             selectedProductImageUrl = "Odoo Developer";
