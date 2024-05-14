@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
             name: fullNameInput.value,
             email: emailInput.value,
             phone: phoneInput.value,
-            phone: academyYear.value,
+            academyYear: academyYear.value,
             address: addressInput.value,
             selectedProductImageUrl: selectedProductImageUrl
         });
