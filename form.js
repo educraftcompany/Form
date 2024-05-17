@@ -15,6 +15,18 @@ const getProductImageUrl = () => {
         case "python":
             selectedProductImageUrl = "Basic Programming with Python";
             break;
+        case "java":
+            selectedProductImageUrl = "Basic Programming with Java";
+            break;
+        case "web-design":
+            selectedProductImageUrl = "Web Design";
+            break;
+        case "django":
+            selectedProductImageUrl = "Django";
+            break;
+        case "graphic-design":
+            selectedProductImageUrl = "Graphic Design";
+            break;
         case "flutter":
         selectedProductImageUrl = "Flutter Developer";
             break;
@@ -37,14 +49,14 @@ const getProductImageUrl = () => {
 };
 
 // Function to construct the email message
-const getEmailMessage = ({ name, email, phone, academy_year, address, selectedProductImageUrl } = {}) => {
+const getEmailMessage = ({ name, email, phone, whatsapp, address, selectedProductImageUrl } = {}) => {
     return `
         <p>You Have Received A New Message From Bionimaroc Measuring Devices:</p>
         <div style="background-color: #101010; color: #fbfbfb; padding: 12px">
             <p style="margin: 0;">Name: ${name}</p>
             <p style="margin: 0;">Email: ${email}</p>
-            <p style="margin: 12px 0;">Phone: ${phone}</p>
-            <p style="margin: 12px 0;">Academy year: ${academy_year}</p>
+            <p style="margin: 12px 0;">Phone number: ${phone}</p>
+            <p style="margin: 12px 0;">Whatsapp number: ${whatsapp}</p>
             <p style="margin: 12px 0;">Address: ${address}</p>
             <p style="margin: 12px 0;">Selected Course : ${selectedProductImageUrl}</p>
         </div>
@@ -57,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const fullNameInput = document.querySelector("#fullname");
     const phoneInput = document.querySelector("#phone");
     const emailInput = document.querySelector("#email");
-    const academyYear = document.querySelector("#academy_year");
+    const whatsapp = document.querySelector("#whatsapp");
     const addressInput = document.querySelector("#address");
     const formMessageDiv = document.querySelector("#formMessage");
 
@@ -72,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
             name: fullNameInput.value,
             email: emailInput.value,
             phone: phoneInput.value,
-            academyYear: academyYear.value,
+            whatsapp: whatsapp.value,
             address: addressInput.value,
             selectedProductImageUrl: selectedProductImageUrl
         });
