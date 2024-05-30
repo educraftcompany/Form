@@ -9,38 +9,26 @@ const getProductImageUrl = () => {
 
     // Set the selected product image URL based on the selected option
     switch (selectedProduct) {
-        case "c++":
-            selectedProductImageUrl = "Basic Programming with c++";
+        case "scratch":
+            selectedProductImageUrl = "Scratch Programming for Kids Course";
             break;
         case "python":
-            selectedProductImageUrl = "Basic Programming with Python";
-            break;
-        case "java":
-            selectedProductImageUrl = "Basic Programming with Java";
-            break;
-        case "web-design":
-            selectedProductImageUrl = "Web Design";
+            selectedProductImageUrl = "Basic programming with Python";
             break;
         case "django":
-            selectedProductImageUrl = "Django";
-            break;
-        case "graphic-design":
-            selectedProductImageUrl = "Graphic Design";
+            selectedProductImageUrl = "Full Stack Web Development with Django Diploma";
             break;
         case "flutter":
-        selectedProductImageUrl = "Flutter Developer";
+        selectedProductImageUrl = "Flutter Mobile App Development Diploma";
             break;
         case "wordpress":
-            selectedProductImageUrl = "Wordpress Developer";
+            selectedProductImageUrl = "WordPress Website Development Diploma";
                 break;
         case "ui-ux":
-            selectedProductImageUrl = "UI UX Design";
+            selectedProductImageUrl = "UI/UX Design Fundamentals Course";
             break;
         case "odoo-developer":
-            selectedProductImageUrl = "Odoo Developer";
-            break;
-        case "odoo-functionl":
-            selectedProductImageUrl = "Odoo Functional";
+            selectedProductImageUrl = "Technical Odoo Development Diploma";
             break;
         default:
             selectedProductImageUrl = ""; // Default to empty if no match
@@ -51,14 +39,14 @@ const getProductImageUrl = () => {
 // Function to construct the email message
 const getEmailMessage = ({ name, email, phone, whatsapp, address, selectedProductImageUrl } = {}) => {
     return `
-        <p>You Have Received A New Message From Bionimaroc Measuring Devices:</p>
+        <p>You Have Received A New Message From EduCraft Academy:</p>
         <div style="background-color: #101010; color: #fbfbfb; padding: 12px">
             <p style="margin: 0;">Name: ${name}</p>
             <p style="margin: 0;">Email: ${email}</p>
             <p style="margin: 12px 0;">Phone number: ${phone}</p>
             <p style="margin: 12px 0;">Whatsapp number: ${whatsapp}</p>
             <p style="margin: 12px 0;">Address: ${address}</p>
-            <p style="margin: 12px 0;">Selected Course : ${selectedProductImageUrl}</p>
+            <p style="margin: 12px 0;">Selected : ${selectedProductImageUrl}</p>
         </div>
     `;
 };
